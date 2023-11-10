@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.heading {
+  /* position: fixed; */
+  background: rgb(34, 162, 187);
+  background: linear-gradient(
+    146deg,
+    rgba(34, 162, 187, 1) 21%,
+    rgba(9, 9, 121, 1) 67%,
+    rgba(2, 0, 36, 1) 100%
+  );
+  color: rgb(240, 240, 240);
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  font-family: "DM Serif Display", serif;
+  font-size: 25px;
+  width: 100%;
+  top: 0;
+}
+img {
+  height: 50px;
+  width: 50px;
+}
+.container {
+  background: rgb(45, 86, 130);
+  background: linear-gradient(
+    146deg,
+    rgba(45, 86, 130, 1) 21%,
+    rgba(52, 52, 121, 1) 67%,
+    rgba(16, 0, 140, 1) 100%
+  );
+  padding: 10px;
+}
+.inputs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+label {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+input {
+  background-color: #fff6f6;
+  height: 30px;
+  margin: 20px;
+  border-radius: 5px;
+  border: 2px solid black;
+  outline: none;
+}
+input:hover,
+input:focus {
+  box-shadow: #eee7e7 2px 2px 15px;
+}
+button {
+  display: block;
+  margin: 15px auto;
+  padding: 10px 20px;
+  font-family: "DM Serif Display", serif;
+  font-size: 20px;
+  background: linear-gradient(
+    146deg,
+    rgba(155, 181, 255, 1) 21%,
+    rgba(241, 233, 247, 1) 49%,
+    rgba(38, 19, 124, 1) 100%
+  );
+  color: black;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.1s ease;
+}
+
+button:hover {
+  background: linear-gradient(
+    146deg,
+    rgba(131, 151, 203, 1) 21%,
+    rgba(79, 127, 245, 1) 46%,
+    rgba(26, 0, 142, 1) 100%
+  );
+  box-shadow: 0 0 0 2px rgba(52, 52, 121, 1), 0 0 0 4px rgba(79, 127, 245, 1);
+  color: white;
+  transform: scale(1.1);
+}
+.result {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0px;
+  color: white;
+}
+#map {
+  width: 600px;
+  height: 400px;
+  display: block;
+  margin: 30px auto 0px auto;
+  z-index: 99;
+}
+.bottom-container{
+    background: linear-gradient(27deg, rgba(0,0,33,1) 21%, rgba(66,66,139,1) 47%, rgb(95, 95, 144) 100%);
+}
+.content{
+  padding: 15px;
+}
+footer {
+  background-color: rgb(32, 32, 84);
+  color: white;
+  height: 150px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+.section-1 div{
+  margin: 5px 0px;
+}
+.footer-container{
+  padding: 8px 0px 0px 0px;
+}
+.media{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 25vw;
+    margin: auto;
+}
+.media img{
+    height: 25px;
+    width: 25px;
+}
+.media .github{
+    filter: invert(100%);
+}
+.footer-container h3{
+  font-family: "DM Serif Display", serif;
+  letter-spacing:2px
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoLocater</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lobster&family=Poppins:ital@1&family=Roboto+Slab&family=Roboto:ital,wght@1,300&family=Signika:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="heading">
+        <img src="location-icon.svg" alt="logo">
+        <h1>Geo-Locatter</h1>
+        <span></span>
+    </div>
+    <div class="container">
+        <div class="inputs">
+            <div>
+                <label for="latitude">Latitude:</label>
+                <input type="text" id="latitude" />
+            </div>
+            <div>
+                <label for="longitude">Longitude:</label>
+                <input type="text" id="longitude" />
+            </div>
+        </div>
+        <button onclick="showLocationOnMap()">Show on Map</button>
+    </div>
+    <div class="bottom-container">
+        <div class="content">
+            <div class="result">
+                <h1>Latitude: <span id="lat"></span></h1>
+                <h1>Longitude: <span id="lon"></span></h1>
+            </div>
+            <div id="map"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="section-1">
+                <div>&copy kaushikuacharya@gmail.com</div>
+                <div>all rights are reserved</div>
+            </div>
+            <br>
+            <h3>Follow me</h3>
+            <br>
+            <div class="media">
+                <a href="https://www.instagram.com/kaushik_k_u_acharya" target="_blank"><img
+                        src="instagram-white-icon.svg" alt=""></a>
+                <a href="https://www.linkedin.com/in/kaushik-k-u-acharya-68a3b2229" target="_blank"><img
+                        src="linkedin-app-white-icon.svg" href="" alt=""></a>
+                <a href="https://github.com/KaushikKU003" target="_blank"><img src="github-icon.svg" alt="" href=""
+                        class="github"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
